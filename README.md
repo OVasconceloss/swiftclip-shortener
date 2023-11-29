@@ -30,16 +30,11 @@ Add additional notes to deploy this on a live system
   - [ReactJS](https://react.dev/)
   - [Typescript](https://www.typescriptlang.org/)
 
-## Contributing
-
-Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code
-of conduct, and the process for submitting pull requests to us.
-
 ## Authors
 
-  - **Victor Vasoconcelos** - Creator
+  - **Victor Vasoconcelos** - Developer
     [OVasconceloss](https://github.com/OVasconceloss)
-  - **Billie Thompson** - *Provided README Template* -
+  - **Billie Thompson** - Provided README Template
     [PurpleBooth](https://github.com/PurpleBooth)
 
 ## License
