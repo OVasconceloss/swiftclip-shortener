@@ -1,4 +1,4 @@
-import "./styles/index.scss";
+import "./styles/index.sass";
 import Router from './routes/Router';
 import ReactDOM from 'react-dom/client';
 
