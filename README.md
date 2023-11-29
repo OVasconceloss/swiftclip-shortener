@@ -30,12 +30,12 @@ Add additional notes to deploy this on a live system
 
 ## Contributions
 
-Sinta-se à vontade para contribuir para este projeto! Para contribuir, siga as etapas abaixo:
+Feel free to contribute to this project! To contribute, follow the steps below:
 
-1. **Clone o Repositório:**
-   ```bash
-   git clone https://github.com/OVasconceloss/swiftclip-shortener.git 
-  ```
+1. **Clone the Repository:**
+```bash
+git clone https://github.com/OVasconceloss/swiftclip-shortener.git
+```
 
 ## Authors
 
