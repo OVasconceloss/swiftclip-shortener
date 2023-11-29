@@ -1,12 +1,10 @@
 # Swiftclip URL Shortener
 
-One Paragraph of the project description
+It consists of a website that offers URL shortening functionalities, providing a quick and convenient way to share links. Developed with modern web technologies (ReactJS, Typescript, SASS), the URL shortener simplifies long addresses, making them more manageable and easier to share on online platforms.
 
 ## Getting Started
 
-These instructions will give you a copy of the project up and running on
-your local machine for development and testing purposes. See deployment
-for notes on deploying the project on a live system.
+
 
 ### Installing
 
@@ -30,11 +28,20 @@ Add additional notes to deploy this on a live system
   - [ReactJS](https://react.dev/)
   - [Typescript](https://www.typescriptlang.org/)
 
+## Contributions
+
+Sinta-se à vontade para contribuir para este projeto! Para contribuir, siga as etapas abaixo:
+
+1. **Clone o Repositório:**
+   ```bash
+   git clone https://github.com/OVasconceloss/swiftclip-shortener.git 
+  ```
+
 ## Authors
 
-  - **Victor Vasoconcelos** - Developer
+  - **Victor Vasoconcelos** | Developer
     [OVasconceloss](https://github.com/OVasconceloss)
-  - **Billie Thompson** - Provided README Template
+  - **Billie Thompson** | Provided README Template
     [PurpleBooth](https://github.com/PurpleBooth)
 
 ## License
