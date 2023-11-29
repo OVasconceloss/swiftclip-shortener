@@ -2,10 +2,6 @@
 
 It consists of a website that offers URL shortening functionalities, providing a quick and convenient way to share links. Developed with modern web technologies (ReactJS, Typescript, SASS), the URL shortener simplifies long addresses, making them more manageable and easier to share on online platforms.
 
-## Getting Started
-
-
-
 ### Installing
 
 ```bash
@@ -39,7 +35,7 @@ git clone https://github.com/OVasconceloss/swiftclip-shortener.git
 
 ## Authors
 
-  - **Victor Vasoconcelos** | Developer
+  - **Victor Vasconcelos** | Developer
     [OVasconceloss](https://github.com/OVasconceloss)
   - **Billie Thompson** | Provided README Template
     [PurpleBooth](https://github.com/PurpleBooth)
