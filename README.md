@@ -1,6 +1,6 @@
 # Swiftclip URL Shortener
 
-It consists of a website that offers URL shortening functionalities, providing a quick and convenient way to share links. Developed with modern web technologies (ReactJS, Typescript, SASS), the URL shortener simplifies long addresses, making them more manageable and easier to share on online platforms.
+It consists of a website that offers URL shortening functionalities, providing a quick and convenient way to share links. Developed with modern web technologies (ReactJS, Typescript, SCSS), the URL shortener simplifies long addresses, making them more manageable and easier to share on online platforms.
 
 ### Installing
 
@@ -20,7 +20,7 @@ Add additional notes to deploy this on a live system
 
 ## Built With
 
-  - [SASS](https://sass-lang.com/)
+  - [SCSS](https://sass-lang.com/)
   - [ReactJS](https://react.dev/)
   - [Typescript](https://www.typescriptlang.org/)
 
