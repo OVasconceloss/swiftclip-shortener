@@ -1,0 +1,56 @@
+//COLOR VARIABLES
+$color_one: #0CF29E;
+$color_two: #09402C;
+$color_thr: #081B26;
+$color_fou: #000000;
+$color_fiv: #FFFFFF;
+
+.header {   
+    padding: 2.0rem;
+
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.link-header {
+    padding: 1.0rem;
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+
+.nav-link {
+    color: $color_fou;
+    text-decoration: none;
+
+    transition: .5s ease all;
+}
+
+.nav-link:hover {color: $color_one;}
+
+.nav-button {
+    width: 4.0rem;
+    padding: 0.3rem;
+    margin-left: 1.5rem;
+
+    cursor: pointer;
+    font-size: 1.0rem;
+    color: $color_fiv;
+    
+    transform: scale(1);
+    transition: .5s ease all;
+
+    border-radius: 1.0rem;
+    background-color: $color_fou;
+    border: 1px solid $color_fou;
+}
+
+.nav-button:hover {
+    color: $color_fou;
+
+    transform: scale(1.1);
+
+    background-color: $color_fiv;
+    border: 1px solid $color_fou;
+}
