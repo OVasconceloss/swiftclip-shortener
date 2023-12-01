@@ -4,9 +4,15 @@ import shortenURL from "../services/api";
 import { Footer } from "../components/Footer/Footer";
 import { Header } from "../components/Header/Header";
 
+interface URLData {
+    id: string,
+    link: string,
+    long_url: string,
+}
+
 const Home: React.FC = () => {
     const [URL, setURL] = useState<string>("");
-    const [data, setData] = useState<null>();
+    const [data, setData] = useState<URLData>({id: "", link: "", long_url: ""});
 
     const handleShortenURL = async () => {
         try {
@@ -39,6 +45,9 @@ const Home: React.FC = () => {
                         className="url-input" 
                         placeholder="Ex: https://www.youtube.com/watch?v=b9eMGE7QtTk"/>
                     <button className="url-input-button" onClick={handleShortenURL}>Shorten URL</button>
+                </div>
+                <div className="section-shortener-url">
+                    <h3 className="shortener-url-link">{data.link}</h3>
                 </div>
             </section>
         </main>
