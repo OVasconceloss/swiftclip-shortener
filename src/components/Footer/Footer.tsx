@@ -18,12 +18,8 @@ export const Footer: React.FC = () => {
             <div className="footer-copyright">
                 <h3 className="copyright-text">Copyright &copy; {currentYear} Victor Vasconcelos</h3>
                 <div className="copyright-menu">
-                    <Link to={`/`} className="link-footer">
-                        <a href="/" className="menu-footer-link">Home</a>
-                    </Link>
-                    <Link to={`/about`} className="link-footer">
-                        <a href="#" className="menu-footer-link">About</a>
-                    </Link>
+                    <Link to={`/`} className="link-footer menu-footer-link">Home</Link>
+                    <Link to={`/about`} className="link-footer menu-footer-link">About</Link>
                     <a 
                         href="https://github.com/OVasconceloss/swiftclip-shortener" 
                         target={`_blank`} 
