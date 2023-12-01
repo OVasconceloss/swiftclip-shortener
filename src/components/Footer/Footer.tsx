@@ -2,6 +2,8 @@ import "./Footer.scss";
 import { Link } from "react-router-dom";
 
 export const Footer: React.FC = () => {
+    const currentYear = new Date().getFullYear();
+
     return (
         <footer className="footer">
             <h2 className="footer-title">Switftclip</h2>
@@ -14,7 +16,7 @@ export const Footer: React.FC = () => {
 
             </div>
             <div className="footer-copyright">
-                <h3 className="copyright-text">Copyright &copy;2023 Victor Vasconcelos</h3>
+                <h3 className="copyright-text">Copyright &copy; {currentYear} Victor Vasconcelos</h3>
                 <div className="copyright-menu">
                     <Link to={`/`} className="link-footer">
                         <a href="/" className="menu-footer-link">Home</a>
