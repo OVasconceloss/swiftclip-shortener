@@ -1,7 +1,7 @@
 import "./Header.scss";
 import { Link } from "react-router-dom";
 
-export const Header = () => {
+export const Header: React.FC = () => {
     return (
         <header className="header">
             <h1 className="header-title">Switftclip</h1>
@@ -15,8 +15,7 @@ export const Header = () => {
                 <a 
                     href="https://github.com/OVasconceloss/swiftclip-shortener" 
                     target={`_blank`} 
-                    className="nav-link"
-                >
+                    className="nav-link">
                     <button className="nav-button">
                         <i className="fa-brands fa-github"></i>
                     </button>
