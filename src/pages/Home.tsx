@@ -12,12 +12,15 @@ interface URLData {
 
 const Home: React.FC = () => {
     const [URL, setURL] = useState<string>("");
+    const [isShorten, setIsShorten] = useState<boolean>(false);
     const [data, setData] = useState<URLData>({id: "", link: "", long_url: ""});
 
     const handleShortenURL = async () => {
         try {
             const response = await shortenURL.post('/shorten', { long_url: URL });
             setData(response.data);
+
+            setIsShorten(true);
         } catch (error) {
             window.alert("We couldn't shorten your link! Try again");
             console.log(`Error: ${error}`);
@@ -46,9 +49,15 @@ const Home: React.FC = () => {
                         placeholder="Ex: https://www.youtube.com/watch?v=b9eMGE7QtTk"/>
                     <button className="url-input-button" onClick={handleShortenURL}>Shorten URL</button>
                 </div>
-                <div className="section-shortener-url">
-                    <h3 className="shortener-url-link">{data.link}</h3>
-                </div>
+                {
+                    !isShorten ?
+                    <h1 className="shortener-url-text">Your link will appear here</h1>
+                    :
+                    <div className="section-shortener-url">
+                        <h3 className="shortener-url-link">{data.link}</h3>
+                        <button className="section-shortener-button">Copy URL to Clipboard</button>
+                    </div> 
+                }
             </section>
         </main>
         <Footer />
