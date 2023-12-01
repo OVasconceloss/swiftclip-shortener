@@ -1,0 +1,7 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "server.tsx",
+  "author": "Victor Vasconcelos",
+  "license": "MIT"
+}
