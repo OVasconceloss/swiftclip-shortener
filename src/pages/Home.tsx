@@ -1,8 +1,25 @@
 import "../styles/home.scss";
+import { useState } from "react";
+import shortenURL from "../services/api";
 import { Footer } from "../components/Footer/Footer";
 import { Header } from "../components/Header/Header";
 
-const Home = () => {
+const Home: React.FC = () => {
+    const [URL, setURL] = useState<string>("");
+    const [data, setData] = useState<null>();
+
+    const handleShortenURL = async () => {
+        try {
+            const response = await shortenURL.post('/shorten', { long_url: URL });
+            setData(response.data);
+        } catch (error) {
+            window.alert("We couldn't shorten your link! Try again");
+            console.log(`Error: ${error}`);
+        }
+
+        setURL("");
+    }
+
     return (
         <>
         <Header />
@@ -13,8 +30,15 @@ const Home = () => {
                     <h2 className="section-url-subtitle">Minimize Links, Maximize Convenience: Your Ultimate URL Shortening Solution</h2>
                 </div>
                 <div className="section-url-input">
-                    <input type="url" name="url" id="url" className="url-input" placeholder="Ex: https://www.youtube.com/watch?v=b9eMGE7QtTk"/>
-                    <button className="url-input-button">Shorten URL</button>
+                    <input 
+                        type="url" 
+                        name="url" 
+                        id="url" 
+                        value={URL} 
+                        onChange={(event) => setURL(event.target.value)} 
+                        className="url-input" 
+                        placeholder="Ex: https://www.youtube.com/watch?v=b9eMGE7QtTk"/>
+                    <button className="url-input-button" onClick={handleShortenURL}>Shorten URL</button>
                 </div>
             </section>
         </main>
