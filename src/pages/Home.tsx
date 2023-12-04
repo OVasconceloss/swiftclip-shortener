@@ -12,6 +12,7 @@ interface URLData {
 
 const Home: React.FC = () => {
     const [URL, setURL] = useState<string>("");
+    const [copySuccess, setCopySuccess] = useState<boolean>(false);
     const [isShorten, setIsShorten] = useState<boolean>(false);
     const [data, setData] = useState<URLData>({id: "", link: "", long_url: ""});
 
@@ -27,6 +28,11 @@ const Home: React.FC = () => {
         }
 
         setURL("");
+    }
+
+    const handleCopyClipboard = (text: string) => {
+        navigator.clipboard.writeText(text);
+        setCopySuccess(true);
     }
 
     return (
@@ -50,12 +56,19 @@ const Home: React.FC = () => {
                     <button className="url-input-button" onClick={handleShortenURL}>Shorten URL</button>
                 </div>
                 {
-                    !isShorten ?
+                    !isShorten 
+                    ?
                     <h1 className="shortener-url-text">Your link will appear here</h1>
                     :
                     <div className="section-shortener-url">
                         <h3 className="shortener-url-link">{data.link}</h3>
-                        <button className="section-shortener-button">Copy URL to Clipboard</button>
+                        {
+                            !copySuccess 
+                            ?
+                            <button className="section-shortener-button" onClick={() => handleCopyClipboard(data.link)}>Copy URL to Clipboard</button>
+                            :
+                            <button className="section-shortener-button">Copied successfully</button>
+                        }
                     </div> 
                 }
             </section>
