@@ -54,3 +54,20 @@ $color_fiv: #FFFFFF;
     background-color: $color_fiv;
     border: 1px solid $color_fou;
 }
+
+//RESPONSIVE
+
+$breakpoint_phone: 600px;
+
+@media (max-width: 600px) {
+    .header {
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    .header-title {font-size: 1.5rem;}
+
+    .link-header {padding: 0.5rem;}
+
+    .nav-button {display: none;}
+}

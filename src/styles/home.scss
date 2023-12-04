@@ -132,3 +132,26 @@
     
     text-align: center;
 }
+
+//RESPONSIVE
+$breakpoint_phone: 600px;
+
+@media (max-width: 600px) {
+    .section-url-title {font-size: 1.6rem;}
+
+    .section-url-subtitle {
+        width: 20rem;
+
+        font-size: 1.0rem;
+        text-align: center;
+        line-height: 1.2rem;
+    }
+
+    .section-url-input {
+        width: 20rem;
+    }
+
+    .url-input-button {
+        padding: 0.5rem;
+    }
+}

@@ -88,3 +88,13 @@
     background-color: color.$color_fou;
     border: 1px solid color.$color_fiv;
 }
+
+//RESPONSIVE
+$breakpoint_phone: 600px;
+
+@media (max-width: 600px) {
+    .footer {
+        bottom: 0;
+        position: absolute;
+    }
+}
