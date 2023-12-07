@@ -95,6 +95,32 @@ $breakpoint_phone: 600px;
 @media (max-width: 600px) {
     .footer {
         bottom: 0;
-        position: absolute;
+        position: relative;
     }
+
+    .footer-description {
+        width: 20rem;
+        font-size: 0.9rem;
+    }
+
+    .footer-copyright {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .copyright-menu {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .copyright-menu-text {margin-top: 1.0rem;}
+
+    .menu-footer-button {
+        width: 10rem;
+        margin: 1.0rem 0;  
+    }
+
+    .copyright-text {display: none;}
 }
