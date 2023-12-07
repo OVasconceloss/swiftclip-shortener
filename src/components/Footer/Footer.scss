@@ -95,7 +95,7 @@ $breakpoint_phone: 600px;
 @media (max-width: 600px) {
     .footer {
         bottom: 0;
-        position: relative;
+        position: absolute;
     }
 
     .footer-description {
