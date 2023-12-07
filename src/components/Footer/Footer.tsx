@@ -11,8 +11,7 @@ export const Footer: React.FC = () => {
                 In the Swiftclip, you'll discover the essence of convenience in
                 URL shortening. Our website, powered by modern web technologies 
                 such as ReactJS, Typescript, and SCSS, provides efficient URL shortening 
-                functionalities. We simplify lengthy addresses, offering a quick and 
-                convenient way to share links on online platforms.
+                functionalities.
             </p>
             <div className="footer-contacts">
                 
