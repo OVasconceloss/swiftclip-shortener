@@ -8,11 +8,14 @@ export const Footer: React.FC = () => {
         <footer className="footer">
             <h2 className="footer-title">Switftclip</h2>
             <p className="footer-description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Praesentium eum, nam inventore accusamus eaque magnam saepe, aperiam
-                rerum quis non omnis minus accusantium rem voluptas? Rerum reprehenderit laudantium commodi deleniti.
+                In the Swiftclip, you'll discover the essence of convenience in
+                URL shortening. Our website, powered by modern web technologies 
+                such as ReactJS, Typescript, and SCSS, provides efficient URL shortening 
+                functionalities. We simplify lengthy addresses, offering a quick and 
+                convenient way to share links on online platforms.
             </p>
             <div className="footer-contacts">
+                
 
             </div>
             <div className="footer-copyright">
