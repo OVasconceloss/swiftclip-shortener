@@ -1,5 +1,11 @@
 # Swiftclip URL Shortener
 
+<div align="center">
+
+  <img src="./public/design/IMG_Home.png"
+
+</div>
+
 It consists of a website that offers URL shortening functionalities, providing a quick and convenient way to share links. Developed with modern web technologies (ReactJS, Typescript, SCSS), the URL shortener simplifies long addresses, making them more manageable and easier to share on online platforms.
 
 ### Installing
